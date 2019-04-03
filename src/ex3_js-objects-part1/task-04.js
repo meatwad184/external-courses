@@ -4,8 +4,8 @@ function objAdd(arg, obj) {
 		if (obj.hasOwnProperty(arg)) {
 		return true;
 		}
-			copy[arg] = 'new'
+			objCopy[arg] = 'new'
 	}
-return copy
+return objCopy
 }
 module.exports = objAdd;
