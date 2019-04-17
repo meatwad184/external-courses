@@ -27,9 +27,9 @@ var calculator = {
 	getResult:function getResult(value) {
 		return this.result;
 	},
-	reset:function reset(value) {
+	reset:function reset() {
 		calculator.result = 0;
 		return this.result;
 	},
 }
-module.exports = calculator;
+module.exports = calculator; 
