@@ -1,7 +1,7 @@
 function checkLatter(str){
     var arCount = {};
     for(var i = 0; i < str.length; i++){
-        if(arCount[str[i]] === undefined){
+        if(!arCount[str[i]]){
             arCount[str[i]] = 1;
         } else {
             arCount[str[i]]++;

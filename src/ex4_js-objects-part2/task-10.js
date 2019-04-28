@@ -1,4 +1,4 @@
-function revers(str){
+function reverse(str){
     var reversStr = '';
     for(var i = str.length; i > 0; i--){
         if(str[i - 1]){
@@ -7,4 +7,4 @@ function revers(str){
     }
   return reversStr;
 }
-module.exports = revers;
+module.exports = reverse;

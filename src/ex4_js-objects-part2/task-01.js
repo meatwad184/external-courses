@@ -1,6 +1,7 @@
 function hasProtoProperty(name, obj){
-  if(typeof name === 'string' && obj.__proto__.hasOwnProperty(name)){
-    return obj.__proto__[name];
+	var proto = Object.getPrototypeOf(obj);
+  if(typeof name === 'string' && proto.hasOwnProperty(name)){
+    return proto[name];
   }
   return undefined;
 }
