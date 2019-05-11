@@ -1,0 +1,19 @@
+@font-face {
+	font-family:echo;
+	src: url(alpha_echo.ttf);
+}
+#one {
+  background-color:blue;
+  font-size:200%;
+  font-family:echo;
+}
+#two {
+  background-color:#FFFF00;
+  font-size:0.5rem;
+}
+.four {
+  background-image:url(batcat.jpg);
+  background-size:200px;
+  color:red;
+  font-size:20pt;
+}
