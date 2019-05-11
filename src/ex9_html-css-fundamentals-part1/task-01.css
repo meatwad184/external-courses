@@ -1,0 +1,23 @@
+button {
+    background: linear-gradient(to top, #888888, #FFFFFF);
+	height: 50px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid;
+	outline: 2px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+div {
+    width: 190px;
+	height: 60px;
+    background: #CBCBCB;
+    border: 1px solid black;
+    border-radius: 15px;
+	background: linear-gradient(to top, #FFFFFF, #888888,);
+}
+img {
+	size: 20px; 
