@@ -1,19 +1,23 @@
-function sliceMethodAnalog(arr, begin, end) {
-	var newArr = [];
-	var start, stop;
-	if (!begin) {
-		start = 0;
-	} else {
-		start = begin;
+ function sliceMethodAnalog(arr, begin, end) {
+	var res = [];
+	var i;
+	var thisIsEnd = end;
+	var thisIsbegin = begin;
+    if (begin === undefined) {
+       thisIsbegin = 0;
+    }
+    if (end === undefined) {
+       thisIsEnd = arr.length;
+    }
+    if (thisIsbegin < 0 && thisIsEnd < 0){
+		for (i = arr.length + thisIsbegin; i < arr.length + thisIsEnd; i++){
+            res.push(arr[i]);
+        }
+    } else { 
+		for (i = thisIsbegin; i < thisIsEnd; i++){
+        res.push(arr[i]);
+		}
 	}
-	if (!end || end >= arr.length) {
-		stop = arr.length;
-	} else stop = end;
-	if (begin < 0) stop += arr.length;
-	if (end < 0) stop += arr.length;
-	for (var i = start; i < stop; i++) {
-		newArr.push(arr[i]);
-	}
-	return newArr;
+    return res;
 }
 module.exports = sliceMethodAnalog;
