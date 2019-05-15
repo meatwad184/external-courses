@@ -3,10 +3,10 @@
 	var i;
 	var thisIsEnd = end;
 	var thisIsbegin = begin;
-    if (begin === undefined) {
+    if (!begin) {
        thisIsbegin = 0;
     }
-    if (end === undefined) {
+    if (!end) {
        thisIsEnd = arr.length;
     }
     if (thisIsbegin < 0 && thisIsEnd < 0){
